@@ -2,15 +2,81 @@
 <html>
   <head>
     <meta charset="utf-8">
+     <link href="bootstrap.css" rel="stylesheet">
     <title>The Akan naming sysyem</title>
+    <style>
+    body{
+      background-color: skyblue;
+      margin: 10;
+      padding: 20px
+    }
+       table{
+           border-collapse: collapse;
+           border-spacing: 0;
+       }
+       th, td{
+           padding: 10px 20px;
+           border: 1px solid #000;
+           background-color: lightblue ;
+       }
+   </style>
+
   </head>
   <body>
+    <div class="container-md">
     <h1>THE AKAN NAMING SYSTEM</h1>
     <p>This application will help you get your Akan name.</p>
     <p>This names are derived from the Ghana people,where they tradationaly named their children according to the day of the week they were born</p>
     <p>Here it a list of the various names corresponding the day of birth and the gender</p>
-    <div class="container">
+      <table class="table">
+  <tbody>
+    <tr>
+      <th scope="col">DAY</th>
+      <td>SUNDAY</td>
+      <td>MONDAY</td>
+      <td>TUESDAY</td>
+      <td>WEDNESY</td>
+      <td>THURSDAY</td>
+      <td>FRIDAY</td>
+      <td>SATURDAY</td>
+    </tr>
 
-    </div>
+    <tr>
+      <th scope="row">MALE</th>
+      <td>AKWASI</td>
+      <td>KWANDO</td>
+      <td>KWABENA</td>
+      <td>KWAKU</td>
+      <td>YAW</td>
+      <td>KOFI</td>
+      <td>KWAME</td>
+    </tr>
+
+    <tr>
+      <th scope="row">FEMALE</th>
+      <td>AKOSUA</td>
+      <td>ADWOA</td>
+      <td>ABENAA</td>
+      <td>AKUA</td>
+      <td>YUA</td>
+      <td>AFUA</td>
+      <td>AMA</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<h2>Please fill in the form below</h2>
+
+<form action="/action_page.ph">
+  <label for="Year">Year of birth:</label><br>
+  <input type="text" id="getUTCFullYear" getUTCFullYear="Year"><br>
+  <label for="Month">Month of birth:</label><br>
+  <input type="text" id="Month" Month="month"><br>
+  <label for="gender">Gender:</label><br>
+  <input type="text" id="gender" name="Gender"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<script src="script scr.js"></script>
   </body>
 </html>
