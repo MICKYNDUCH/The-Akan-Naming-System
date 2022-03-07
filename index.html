@@ -20,7 +20,16 @@
            background-color: lightblue ;
        }
    </style>
-   <script type="text/javascript"></script>
+   <script type="text/javascript">
+   function calculate_age(dob) {
+     var diff_ms = Date.now() - dob.getTime();
+     var age_dt = new Date(diff_ms);
+
+     return Math.abs(age_dt.getUTCFullYear() - 1970);
+   }
+   // var input = prompt("please input date = (yyyy/ mm /dd)")
+   // console.log(calculate_age(new Date(input)));
+   </script>
   </head>
   <body>
     <div class="container-md">
@@ -68,16 +77,19 @@
 
 <h2>Please fill in the form below;</h2>
 
-<form action="input = prompt("please input date = (yyyy mm dd)")
-console.log(calculate_age(new Date(input)));
-/action_page.ph">
-  <label for="Year">Year of birth:</label><br>
-  <input type="text" id="getUTCFullYear" getUTCFullYear="Year"><br>
-  <label for="Month">Month of birth:</label><br>
-  <input type="text" id="Month" Month="month"><br>
+<form action="#" id="form">
+  <label for="yyy">Year of birth:</label><br>
+  <input type="text" id="yyy"><br>
+  <label for="mm">Month of birth:</label><br>
+  <input type="text" id="mm"><br>
+  <label for="dt">birth date:</label><br>
+  <input type="text" id="dt"><br>
   <label for="gender">Gender:</label><br>
-  <input type="text" id="gender" name="Gender"><br><br>
+  <input type="text" id="gender" name="gender"><br><br>
   <input type="submit" value="Submit">
 </form>
+<script type="text/javascript" src="js/scripts.js">
+
+</script>
   </body>
 </html>
