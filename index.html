@@ -2,13 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-     <link href="bootstrap.css" rel="stylesheet">
+     <link href="css/bootstrap.css" rel="stylesheet">
     <title>The Akan naming sysyem</title>
     <style>
     body{
       background-color: skyblue;
       margin: 10;
-      padding: 20px
+      padding: 10px
     }
        table{
            border-collapse: collapse;
@@ -20,7 +20,7 @@
            background-color: lightblue ;
        }
    </style>
-
+   <script type="text/javascript"></script>
   </head>
   <body>
     <div class="container-md">
@@ -35,7 +35,7 @@
       <td>SUNDAY</td>
       <td>MONDAY</td>
       <td>TUESDAY</td>
-      <td>WEDNESY</td>
+      <td>WEDNESDAY</td>
       <td>THURSDAY</td>
       <td>FRIDAY</td>
       <td>SATURDAY</td>
@@ -66,9 +66,11 @@
 </table>
 <br>
 
-<h2>Please fill in the form below</h2>
+<h2>Please fill in the form below;</h2>
 
-<form action="/action_page.ph">
+<form action="input = prompt("please input date = (yyyy mm dd)")
+console.log(calculate_age(new Date(input)));
+/action_page.ph">
   <label for="Year">Year of birth:</label><br>
   <input type="text" id="getUTCFullYear" getUTCFullYear="Year"><br>
   <label for="Month">Month of birth:</label><br>
@@ -77,6 +79,5 @@
   <input type="text" id="gender" name="Gender"><br><br>
   <input type="submit" value="Submit">
 </form>
-<script src="script scr.js"></script>
   </body>
 </html>
