@@ -1,27 +1,34 @@
-//
-// var days = {"sunday","monday","tuesday","wednesday","thursday","friday","saturday"};
-// var maleNames = {"kwasi","kwando","kwabena","kwaku","yaw","kofi","kwame"};
-// var femaleNames ={"akosua","adwoa","abena","akua","yua","afua","ama"};
-// var weekNumder = {"0","1","2","3","4","5","6","7"};
-//
-// day===maleNames===femaleNames===weekNumder;
-
-
-
-// function calculate_age(dob) {
-//     var diff_ms = Date.now() - dob.getTime();
-//     var age_dt = new Date(diff_ms);
-//
-//     return Math.abs(age_dt.getUTCFullYear() - 1970);
+var date = document.getElementById("dt");
+var month = document.getElementById("mm");
+var year = document.getElementById("yyy");
+var gender = document.getElementById("gender");
+var form = document.getElementById("form");
+// function getAge(dateString)
+// {
+// //     var today = new Date();
+//     var birthDate = new Date(dateString);
+//     var age = today.getFullYear() - birthDate.getFullYear();
+//     var m = today.getMonth() - birthDate.getMonth();
+//     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate()))
+//     {
+//         age--;
+//     }
+//     return age;
 // }
-//
-// console.log(calculate_age(new Date(1991, 11, 29)));
+// var d = new Date();
+// var n = d.getFullYear();
+// function getAge(birthYear){
+// 	var currentDate = new Date();
+//     var currentYear = currentDate.getFullYear();
+//     age = currentYear - birthYear;
+//     return age;
+// }
+// calculatedAge = getAge(year_born);
+// alert("Hello, " + "you are " + calculatedAge + " years old!");
+// var myDate = new Date(2019, 11, 06, 10, 45);
+// var dayInYear = Math.floor((myDate - new Date(myDate.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
 
-function calculate_age(dob) {
-  var diff_ms = Date.now() - dob.getTime();
-  var age_dt = new Date(diff_ms);
-
-  return Math.abs(age_dt.getUTCFullYear() - 1970);
-}
-var input = prompt("please input date = (yyyy mm dd)")
-console.log(calculate_age(new Date(input)));
+form.addEventListener("submit", function(e){
+  e.preventDefault()
+  console.log(date.value, month.value, year.value, gender.value)
+})
