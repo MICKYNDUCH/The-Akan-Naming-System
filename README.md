@@ -60,7 +60,7 @@ Dd-this the date of the month.
 though the app is running ,at times it might not give the actual day of birth due to the leap year concept that has not been considered while doing the calculations. Thus this will need an upgrade in future for actual birth days
 
 ## Technologies Used
-Basically the app is build on the HTML and CSS languages that have been enhanced by the use of bootstrap styling that makes the page more responsive and user friendly.
+Basically the app is build on the HTML and CSS languages that have been enhanced by the use of BOOTSRAP styling that makes the page more responsive and user friendly.
 
 ## Support and contact details
 the app is not well finished and will require more styling and additional code to finish it up to produce the results as expected,thus any help on making the app more convenient and additional ideas are welcome. Please fill free to contact me on ;
