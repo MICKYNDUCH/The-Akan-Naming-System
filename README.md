@@ -7,32 +7,32 @@ DATE;7/3/2022
 
 DAY
 
-SUNDAY
-MONDAY
-TUESDAY
-WEDNESDAY
-THURSDAY
-FRIDAY
+SUNDAY,
+MONDAY,
+TUESDAY,
+WEDNESDAY,
+THURSDAY,
+FRIDAY,
 SATURDAY
 
 MALE
 
-KWASI
-KWADO
-KWABENA
-KWAKU
-YAW
-KOFI
+KWASI,
+KWADO,
+KWABENA,
+KWAKU,
+YAW,
+KOFI,
 KWAME
 
 FEMALE
 
-AKOSUA
-ADWOA
-ABENAA
-AKUA
-YUA
-AFUA
+AKOSUA,
+ADWOA,
+ABENAA,
+AKUA,
+YUA,
+AFUA,
 AMA
 
 #### Authors  
@@ -42,7 +42,7 @@ Michael Njenga (software developer)
 this application is designed to take the users input as the date of birth (yyyy/mm/dd)
 the app then calculates the day of the week they were born and give the feedback on the actual days of birth corresponding with the Akan name as listed in the table.
 
-## Known bugs
+## Key words
 On calculation of the day, the formulae used is ;
 dw=(((cc/4)-2*cc-1)+((5*yy/4)+((26*(mm+1)/10))+dd)% 7
 
