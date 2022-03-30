@@ -1,86 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-     <link href="css/bootstrap.css" rel="stylesheet">
-    <title>The Akan naming sysyem</title>
-    <style>
-    body{
-      background-color: skyblue;
-      margin: 10;
-      padding: 10px
-    }
-       table{
-           border-collapse: collapse;
-           border-spacing: 0;
-       }
-       th, td{
-           padding: 10px 20px;
-           border: 1px solid #000;
-           background-color: lightblue ;
-       }
-   </style>
-   <script type="text/javascript"></script>
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="css/styles.css" media="all">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="container-md">
-    <h1>THE AKAN NAMING SYSTEM</h1>
-    <p>This application will help you get your Akan name.</p>
-    <p>This names are derived from the Ghana people,where they tradationaly named their children according to the day of the week they were born</p>
-    <p>Here it a list of the various names corresponding the day of birth and the gender</p>
-      <table class="table">
-  <tbody>
-    <tr>
-      <th scope="col">DAY</th>
-      <td>SUNDAY</td>
-      <td>MONDAY</td>
-      <td>TUESDAY</td>
-      <td>WEDNESDAY</td>
-      <td>THURSDAY</td>
-      <td>FRIDAY</td>
-      <td>SATURDAY</td>
-    </tr>
+    <div class="content">
+      <div class="container">
+        <h1>The Akan name generator!</h1>
+        <p>Hello there! This is a web application that takes your birthday details and calculates the day of the week you were born and then depending on your gender, outputs your Akan Name. <a class="research" href="https://en.wikipedia.org/wiki/Akan_names" target="_blank">Akan names</a> are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. </p>
+        <p>To find out what your Akan name is, proceed to filling the form below and clicking the generate name button.
+        <form class="myform" onsubmit="return getAkanName()">
+          <label for="year-of-birth">
+            Year:
+            <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+          </label>
+          <label for="month-of-birth">
+            Month:
+            <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
+          </label>
+          <label for="day-of-birth">
+            Day:
+            <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
+          </label>
+          <br>
+          <label for="gender">
+            <p>Select your gender: </p>
+            Male
+            <input id="male-input" type="radio" name="gender" value="male" required>
+            Female
+            <input id="female-input" type="radio" name="gender" value="female" required>
 
-    <tr>
-      <th scope="row">MALE</th>
-      <td>AKWASI</td>
-      <td>KWANDO</td>
-      <td>KWABENA</td>
-      <td>KWAKU</td>
-      <td>YAW</td>
-      <td>KOFI</td>
-      <td>KWAME</td>
-    </tr>
+          </label>
+          <br><br>
+          <input id="get-name" type="submit" name="" value="Generate name">
+          <br><br>
+        </form>
+        <form onsubmit="return clearInput()">
+          <input class="clear" type="submit" value="Clear input">
+        </form>
 
-    <tr>
-      <th scope="row">FEMALE</th>
-      <td>AKOSUA</td>
-      <td>ADWOA</td>
-      <td>ABENAA</td>
-      <td>AKUA</td>
-      <td>YUA</td>
-      <td>AFUA</td>
-      <td>AMA</td>
-    </tr>
-  </tbody>
-</table>
-<br>
 
-<h2>Please fill in the form below;</h2>
+        <h4 id = display-name><strong>Your Akan name will be displayed below:</strong></h4>
+        <p id="result"></p>
+      </div>
+    </div>
 
-<form action="#" id="form">
-  <label for="yyy">Year of birth:</label><br>
-  <input type="text" id="yyy"><br>
-  <label for="mm">Month of birth:</label><br>
-  <input type="text" id="mm"><br>
-  <label for="dt">birth date:</label><br>
-  <input type="text" id="dt"><br>
-  <label for="gender">Gender:</label><br>
-  <input type="text" id="gender" name="gender"><br><br>
-  <input type="submit" value="Submit">
-</form>
-<script type="text/javascript" src="js/scripts.js">
+    <script src="js/scripts.js" ></script>
 
-</script>
   </body>
 </html>
