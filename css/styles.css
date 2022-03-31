@@ -1,6 +1,8 @@
 body{
     font-family: 'Quicksand', sans-serif;
     background-image: url(../images/ghana\ pic1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
     color: white;
     font-size: 17px;
   }
@@ -50,6 +52,7 @@ body{
   
   #result{
     text-align: center;
+    font-size: 500px;
   }
   
   .content{
@@ -82,5 +85,5 @@ body{
   }
   
   a:hover{
-    color: #006B3F;
+    color: #1e6b00;
   }
